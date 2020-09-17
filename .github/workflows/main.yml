@@ -17,5 +17,5 @@ jobs:
       - name: Send readme.md
         uses: ./
         env:
-            SENDGRID_API_KEY: ${{secrets.SENDGRID_API_KEY}
+            SENDGRID_API_KEY: ${{secrets.SENDGRID_API_KEY}}
             REPO_EMAIL_ADDRESS: ${{secrets.REPO_EMAIL_ADDRESS}}
