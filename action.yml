@@ -1,0 +1,5 @@
+name: 'EmailReadme'
+description: 'Email the Repo Owner on update of Readme.md'
+runs:
+  using: 'node12'
+  main: 'index.js'

@@ -1,0 +1,25 @@
+{
+  "name": "email-readme-on-change-action",
+  "version": "1.0.0",
+  "description": "Emails your readme on change",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryonlinux/email-readme-on-change-action.git"
+  },
+  "author": "Jordan Tryon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tryonlinux/email-readme-on-change-action/issues"
+  },
+  "homepage": "https://github.com/tryonlinux/email-readme-on-change-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "@sendgrid/mail": "^7.2.5",
+    "showdown": "^1.9.1"
+  }
+}

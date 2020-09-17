@@ -1,0 +1,9 @@
+name: 'EmailReadme'
+description: 'Email the Repo Owner on update of Readme.md'
+inputs:
+  who-to-email:  # id of input
+    description: 'tryonlinux@gmail.com'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'

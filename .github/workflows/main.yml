@@ -1,0 +1,21 @@
+on: 
+  push:
+     paths:
+       - 'README.md'
+jobs:
+  send_readme_job:
+    runs-on: ubuntu-latest
+    name: A Job to send readme.md changes via email
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@main
+        with:
+          node-version: '12.x'
+          check-latest: true
+      - run: npm install
+      - name: Send readme.md
+        uses: ./
+        env:
+            SENDGRID_API_KEY: ${{secrets.SENDGRID_API_KEY}
+            REPO_EMAIL_ADDRESS: ${{secrets.REPO_EMAIL_ADDRESS}}
